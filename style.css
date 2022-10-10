@@ -1,0 +1,72 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60pt;
+}
+
+#restartButton {
+    font-size: 18pt;
+
+}
+
+
+body{
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
+    padding: 1%;
+    border: 5px solid black;
+}
+
+.game-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gameGrid{
+    height: 450px;
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    padding: 5%;
+}
+
+.cell{
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    font-size: 60pt;
+    text-align: center;
+    line-height: 125px;
+}
+.cell:nth-child(3n){
+    border-right: none;
+}
+.cell:nth-child(n+7){
+    border-bottom: none;
+}
+
+.cell.highlight{
+    background-color: #f7b32c;
+}
+
+#name-input-line {
+    display: flex;
+    font-size: 20pt;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayed_name_container {
+    font-size: 24pt;
+    color: black;
+    display:inline;
+    justify-content: space-between;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Tic-Tac-Toe!</title>
+</head>
+<body>
+    <h1>Tic Tac Toe!</h1>
+    <div class="game-container">
+        
+        <h2 id="winnerText">Who will win??</h2>
+        <br>
+        <br>
+    </div>
+    <div id="name-input-line">
+        <label>Player-X Name: </label>
+        <input id="name-input" type="text">
+        <button id="submit-button">Submit</button>
+    </div>
+    <div id="name-input-line">
+        <label>Player-O Name: </label>
+        <input id="name-input-two" type="text">
+        <button id="submit-button-two">Submit</button>
+    </div>
+    <div class="displayed_name_container">
+        <p id="displayed-name">Player-X: </p>
+        <p id="displayed-name-two">Player-O: </p>
+    </div>
+    <br>
+    <button id="restartButton">New Game!</button>
+    <div class="gameGrid">
+        <div class="cell" id="0"></div>
+        <div class="cell" id="1"></div>
+        <div class="cell" id="2"></div>
+        <div class="cell" id="3"></div>
+        <div class="cell" id="4"></div>
+        <div class="cell" id="5"></div>
+        <div class="cell" id="6"></div>
+        <div class="cell" id="7"></div>
+        <div class="cell" id="8"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
